@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			".fantomasignore": "ignore",
+			"*.cppm": "cpp",
+			"typeinfo": "cpp",
+			"chrono": "cpp",
+			"string.h": "c",
+			"sstream": "c",
+			"stdlib.h": "c"
+		}
+	}
+}
