@@ -13,7 +13,7 @@ int main(int argc, char *argv[]) {
     printf("%.3s.%.3s.%.3s-%.2s\n", str, str + 3, str + 6, str + 9);
 
     // For CPF
-    const char* cpf = "569122009";
+    const char* cpf = "139122009";
     char * stra = NULL;
     stra = EvaluateOldFirstDV(cpf, 9);
     printf("%.3s.%.3s.%.3s-%.1s\n", stra, stra + 3, stra + 6, stra + 9);

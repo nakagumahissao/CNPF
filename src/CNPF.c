@@ -32,14 +32,12 @@ char* EvaluateFirstDV(const char NineAlfaDigitsValue[], int arraySize) {
         sumValues += weighted[i];
     }
 
-    unsigned int dv = 11 - sumValues % 11;
+    unsigned int dv = sumValues % 11;
 
     if (dv < 2) {
         dv = 0;
-    }
-    
-    if (dv == 10) {
-        dv = 0;
+    } else {
+        dv = 11 - dv;
     }
 
     // Allocate memory for final CNPF + DV + '\0'
@@ -90,14 +88,12 @@ char* EvaluateSecondDV(const char NineAlfaDigitsValue[], int arraySize) {
         sumValues += weighted[i];
     }
 
-    unsigned int dv = 11 - sumValues % 11;
+    unsigned int dv = sumValues % 11;
 
     if (dv < 2) {
         dv = 0;
-    }
-    
-    if (dv == 10) {
-        dv = 0;
+    } else {
+        dv = 11 - dv;
     }
 
     // Allocate memory for final CNPF + DV + '\0'
